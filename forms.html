@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    
+    <h1>HTML Form Elements</h1>
+
+    <!-- Form Container -->
+    <form action="/submit-form" method="post">
+        
+        <!-- Fieldset 1: Personal Info -->
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <!-- Text Input -->
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <!-- Email Input -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <!-- Password Input -->
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br><br>
+
+            <!-- Telephone Input -->
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone"><br><br>
+
+            <!-- Number Input -->
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" min="1" max="120"><br><br>
+
+            <!-- Date Input -->
+            <label for="birthdate">Birth Date:</label>
+            <input type="date" id="birthdate" name="birthdate"><br><br>
+
+            <!-- File Input -->
+            <label for="avatar">Profile Picture:</label>
+            <input type="file" id="avatar" name="avatar" accept="image/*"><br><br>
+        </fieldset>
+
+        <!-- Fieldset 2: Preferences -->
+        <fieldset>
+            <legend>Preferences</legend>
+
+            <!-- Radio Buttons -->
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label><br><br>
+
+            <!-- Checkboxes -->
+            <label>Known Web Technologies:</label><br>
+            <input type="checkbox" id="html" name="tech" value="html">
+            <label for="html">HTML</label><br>
+            
+            <input type="checkbox" id="css" name="tech" value="css">
+            <label for="css">CSS</label><br>
+            
+            <input type="checkbox" id="js" name="tech" value="javascript">
+            <label for="js">JavaScript</label><br><br>
+
+            <!-- Dropdown Select -->
+            <label for="country">Country:</label>
+            <select id="country" name="country">
+                <option value="">--Please choose--</option>
+                <option value="usa">United States</option>
+                <option value="ca">Canada</option>
+                <option value="uk">United Kingdom</option>
+                <option value="fr">France</option>
+            </select><br><br>
+
+            <!-- Textarea -->
+            <label for="bio">Bio:</label><br>
+            <textarea id="bio" name="bio" rows="4" cols="50" placeholder="Tell us about yourself..."></textarea><br><br>
+        </fieldset>
+
+        <!-- Form Buttons -->
+        <input type="reset" value="Reset Form">
+        <input type="submit" value="Register">
+    </form>
+
+    <div>
+        <h1>Navigation</h1>
+        <li><a href="text-formatting.html">Text Formatting</a></li>
+        <li><a href="lists.html">Lists</a></li>
+        <li><a href="tables.html">Tables</a></li>
+        <li><a href="forms.html">Forms</a></li>
+        <li><a href="media.html">Media</a></li>
+        <li><a href="semantic-layout.html">Semantic Layout</a></li>
+    </div>
+</body>
+</html>
